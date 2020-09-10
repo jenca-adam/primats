@@ -1,0 +1,21 @@
+{%extends 'main/base.html'%}
+{%block title%}
+Primátie fórum
+{%endblock%}
+{%block body%}
+<table>
+{%for p in prispevky%}
+<tr>
+<td>
+{{p.uzivatel}}
+</td>
+<td>
+{{p.vznikol}}
+</td>
+<td>
+{{p.obsah}}
+</td>
+</tr>
+{%endfor%}
+{%endblock%}
+
